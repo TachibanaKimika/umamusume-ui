@@ -2,7 +2,7 @@
  * @Author: Akarichan
  * @LastEditors: Akarichan
  * @Date: 2021-09-23 22:00:29
- * @LastEditTime: 2021-09-28 15:17:47
+ * @LastEditTime: 2021-09-28 20:12:51
 -->
 <template>
     <div class="qs__main">
@@ -11,7 +11,7 @@
         <h3>使用npm安装</h3>
         <pre v-highlightjs>
             <code class="bash">
-npm install um-ui
+npm install umamusume-ui
             </code>
         </pre>
         <h3>在项目中引入</h3>
@@ -23,7 +23,8 @@ npm install um-ui
 export default {
     data() {
         return {
-            data: `import Umui from 'um-ui'`
+            data: `import UmamusumeUI from 'umamusume-ui'
+Vue.use(UmamusumeUI)`
         }
     }
 }

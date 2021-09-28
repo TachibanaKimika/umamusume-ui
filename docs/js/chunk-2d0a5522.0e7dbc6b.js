@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0a5522"],{"09cf":function(t,e,n){"use strict";n.r(e);var u=function(){var t=this,e=t.$createElement,n=t._self._c||e;return n("div",[n("um-menu",{attrs:{mode:"vertical"}},[n("um-menu-item",{attrs:{index:"/"}},[t._v("主页")]),n("um-menu-item",{attrs:{index:"/quickstart"}},[t._v("快速开始")]),n("um-menu-item",{attrs:{index:"/document"}},[t._v("组件")])],1)],1)},i=[],a={},m=a,r=n("2877"),c=Object(r["a"])(m,u,i,!1,null,null,null);e["default"]=c.exports}}]);
-//# sourceMappingURL=chunk-2d0a5522.0e7dbc6b.js.map
