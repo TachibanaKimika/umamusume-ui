@@ -1,0 +1,1 @@
+.main{display:grid;grid-template-columns:repeat(5,1fr);grid-template-rows:repeat(5,1fr);grid-column-gap:0;grid-row-gap:0}.siderBar{grid-area:1/1/6/2}.main__view{grid-area:1/2/6/6;padding:40px;width:90%}

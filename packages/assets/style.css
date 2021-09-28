@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Noto Sans SC';
+    src: url("./NotoSansSC-Bold.otf") format("onetype");
+}
+
+.um-component {
+    font-family: 'Noto Sans SC', sans-serif;
+}
