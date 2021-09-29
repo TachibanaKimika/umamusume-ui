@@ -2,7 +2,7 @@
  * @Author: Akarichan
  * @LastEditors: Akarichan
  * @Date: 2021-09-17 13:58:59
- * @LastEditTime: 2021-09-27 14:24:28
+ * @LastEditTime: 2021-09-29 17:09:13
 -->
 <template>
     <div id="app">
@@ -33,7 +33,7 @@
             </div>
         </div>
         <div class="menu">
-            <um-menu route>
+            <um-menu route :size="30">
                 <um-menu-item index="/">主页</um-menu-item>
                 <um-menu-item index="/quickstart">快速开始</um-menu-item>
                 <um-menu-item index="/component">组件</um-menu-item>

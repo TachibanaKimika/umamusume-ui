@@ -2,20 +2,18 @@
  * @Author: Akarichan
  * @LastEditors: Akarichan
  * @Date: 2021-09-23 22:00:29
- * @LastEditTime: 2021-09-28 20:12:51
+ * @LastEditTime: 2021-09-29 17:08:39
 -->
 <template>
     <div class="qs__main">
         <h3>环境要求</h3>
-        <p>支持vue2.x, um-slider只支持webkit内核, </p>
+        <p>支持vue2.x, um-slider暂时只支持webkit内核</p>
         <h3>使用npm安装</h3>
         <pre v-highlightjs>
-            <code class="bash">
-npm install umamusume-ui
-            </code>
+            <code class="bash">npm install umamusume-ui</code>
         </pre>
         <h3>在项目中引入</h3>
-        <pre v-highlightjs="data"><code class="javascript"></code></pre>
+        <pre v-highlightjs="data"><code></code></pre>
     </div>
 </template>
 

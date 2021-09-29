@@ -62,7 +62,7 @@ export default {
     <p>默认标签</p>
     <um-tag >bar</um-tag>
     <um-tag bgType="golden">foo</um-tag>
-    <um-tag bgType="colorful">baz</um-tag>
+    <um-tag bgType="colorful" iconType="01">baz</um-tag>
 </div>
 <div class="components-group">
     <p>自定义大小</p>
@@ -72,9 +72,9 @@ export default {
 </div>
 <div class="components-group">
     <p>也可以往里面塞html</p>
-    <um-tag :size="30" bgType="colorful" @click.native="func">
+    <um-tag :size="30" bgType="colorful" @click.native="cons">
         <div style="padding:0 30px">
-            <h1>foo</h1>
+            <um-input placeholder="um-input"></um-input>
         </div>
     </um-tag>
 </div>`,

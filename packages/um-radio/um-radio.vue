@@ -131,10 +131,12 @@
         .um-radio__label {
             -webkit-text-stroke: 0.4px rgb(106, 87, 50);
             color: rgb(106, 87, 50);
+            cursor: pointer;
             font-size: 20px;
             font-weight: bold;
             line-height: 28px;
             padding-left: 10px;
+            
             vertical-align: middle;
         }
     }
@@ -155,6 +157,9 @@
         .um-radio__inner {
             cursor: not-allowed;
             background-image: linear-gradient(to top,rgb(220, 220, 220),rgb(220, 220, 220));
+        }
+        .um-radio__label {
+            cursor: not-allowed;
         }
     }
 </style>

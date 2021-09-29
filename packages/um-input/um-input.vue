@@ -5,7 +5,7 @@
 <template>
     <div class="um-component um-input"
     :style="{
-        '--cumstomheight': height
+        '--cumstomheight': `${size}px`
     }">
         <input class="um-input__inner" :value="value"
             :class="`um-input__padding__${paddingLength()} ${disabled?'um-input-disabled':''}`"
@@ -41,9 +41,9 @@
                 type: String,
                 default: 'text'
             },
-            height: {
-                type: String,
-                default: '40px'
+            size: {
+                type: Number,
+                default: 40
             },
             name: {
                 type: String,

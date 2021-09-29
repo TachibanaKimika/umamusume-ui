@@ -2,13 +2,13 @@
  * @Author: Akarichan
  * @LastEditors: Akarichan
  * @Date: 2021-09-23 21:58:16
- * @LastEditTime: 2021-09-26 16:05:00
+ * @LastEditTime: 2021-09-29 17:06:32
 -->
 
 
 <template>
     <div class="about">
-        <h1>喜欢我七海nana7mi🐎</h1>
+        <h1>TODO</h1>
     </div>
 </template>
 <script>

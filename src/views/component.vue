@@ -2,12 +2,12 @@
  * @Author: Akarichan
  * @LastEditors: Akarichan
  * @Date: 2021-09-23 14:14:30
- * @LastEditTime: 2021-09-27 19:39:19
+ * @LastEditTime: 2021-09-29 22:43:03
 -->
 <template>
     <div class="main">
         <div class="siderBar">
-            <um-menu route mode="vertical">
+            <um-menu route mode="vertical" :size="30">
                 <um-menu-item index="/component/button">Button(按钮)</um-menu-item>
                 <um-menu-item index="/component/card">Card(卡片)</um-menu-item>
                 <um-menu-item index="/component/checkbox">CheckBox(多选框)</um-menu-item>
