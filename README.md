@@ -2,7 +2,7 @@
  * @Author: Akarichan
  * @LastEditors: Akarichan
  * @Date: 2021-09-20 23:42:23
- * @LastEditTime: 2021-09-28 20:13:21
+ * @LastEditTime: 2021-09-29 23:12:19
 -->
 
 # 使用文档
@@ -11,6 +11,6 @@
 # 快速开始
 ```js
 import UmamusumeUI from 'umamusume-ui'
-import 'umamusume-ui/umamusume-ui.css'
+import 'umamusume-ui/lib/umamusume-ui.css'
 Vue.use(UmUI)
 ```

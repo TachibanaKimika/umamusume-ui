@@ -2,7 +2,7 @@
  * @Author: Akarichan
  * @LastEditors: Akarichan
  * @Date: 2021-09-23 22:00:29
- * @LastEditTime: 2021-09-29 17:08:39
+ * @LastEditTime: 2021-09-29 23:12:37
 -->
 <template>
     <div class="qs__main">
@@ -22,6 +22,7 @@ export default {
     data() {
         return {
             data: `import UmamusumeUI from 'umamusume-ui'
+import 'umamusume-ui/lib/umamusume-ui.css'
 Vue.use(UmamusumeUI)`
         }
     }
@@ -32,6 +33,5 @@ Vue.use(UmamusumeUI)`
 .qs__main {
     width: 80%;
     margin: auto;
-    
 }
 </style>
