@@ -22,8 +22,8 @@
                 </div>
                 <div class="components-group">
                     <p>其他尺寸</p>
-                    <um-button type="green" :size="30">bar_size_30</um-button>
-                    <um-button :size="30" notion>foo_size_30</um-button>
+                    <um-button type="green" :size="30">bar, size 30</um-button>
+                    <um-button :size="30" notion>foo, size 30</um-button>
                 </div>
                 <template slot="moreinfo">
                     <div class="components_code">
@@ -117,7 +117,7 @@ export default {
                         type: 'Number',
                         default: '20',
                         description: '按钮的大小属性, 单位为px'
-                    },
+                    }
                 ]
             }
             

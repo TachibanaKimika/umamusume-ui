@@ -2,7 +2,7 @@
  * @Author: Akarichan
  * @LastEditors: Akarichan
  * @Date: 2021-09-25 22:24:17
- * @LastEditTime: 2021-09-29 17:16:10
+ * @LastEditTime: 2021-10-05 15:26:59
 -->
 <!--
  * @Author: Akarichan
@@ -50,9 +50,9 @@
                         <pre v-highlightjs="sourcecode">
                             <code class="xml"></code>
                         </pre>
-                        <pre v-highlightjs="sourcecodeJS">
+                        <!-- <pre v-highlightjs="sourcecodeJS">
                             <code class="javascript"></code>
-                        </pre>
+                        </pre> -->
                     </div>
                 </template>
             </um-card>

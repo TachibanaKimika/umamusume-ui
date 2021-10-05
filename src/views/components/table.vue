@@ -5,8 +5,8 @@
 <template>
     <div>
         <div class="components-show">
-            <um-card title="按钮组件">
-                <p>表格组件</p>
+            <um-card title="表格组件">
+                <p>基本使用</p>
                 <div class="components-group" style="font-weight: normal">
                     <um-table
                     :columns="testdata.first.columns"

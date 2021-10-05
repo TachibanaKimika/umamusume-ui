@@ -1,8 +1,23 @@
 .components_code {
     /* margin: 0; */
+    $color: rgba(116, 125, 255, 0.208);
     padding: 0 5px;
     code {
         background-color: transparent;
+    }
+    ::selection {
+        background:$color; 
+        color:#555 !important;
+    }
+    
+    ::-moz-selection {
+        background:$color; 
+        color:#555 !important;
+    }
+    
+    ::-webkit-selection {
+        background:$color; 
+        color:#555 !important;
     }
 }
 

@@ -3,12 +3,17 @@
  * @LastEditors: Akarichan
 -->
 <template>
-    <label class="um-component um-radio" :class="{
-            'is-checked': label == model ,
-            'is-disabled': disabled ,
-        }">
+    <label class="um-component um-radio" 
+    :class="{
+        'is-checked': label == model ,
+        'is-disabled': disabled ,
+    }"
+    :style="{
+        '--size': `${size}px`
+    }"
+    >
         <span class="um-radio__input">
-            <span class="um-radio__inner"></span>
+            <span class="um-radio__inner">
             <input 
             type="radio" 
             class="um-radio__original" 
@@ -16,6 +21,9 @@
             v-model="model"
             :disabled="disabled"
             >
+                <span class="um-radio__inner__thumb">
+                </span>
+            </span>
         </span>
         <span class="um-radio__label">
             <slot></slot>
@@ -39,8 +47,8 @@
                 defualt: ''
             },
             size: {
-                type: String,
-                defualt: ''
+                type: Number,
+                default: 20
             },
             disabled: {
                 type: Boolean,
@@ -70,17 +78,18 @@
 
 <style lang="scss">
     .um-radio {
+        $size: var(--size) !global;
         color: #606266;
         display: inline-block;
-        font-size: 14px;
+        font-size: calc($size * 0.7);
         font-weight: 500;
-        line-height: 1;
-        margin-right: 30px;
+        /* line-height: 1; */
+        margin-right: calc($size * 1.5);
         outline: num;
-        position: relative;
         white-space: nowrap;
 
         .um-radio__input {
+            box-sizing: border-box;
             cursor: pointer;
             display: inline-block;
             line-height: 1;
@@ -94,37 +103,30 @@
                 border: 1px solid #5b5b5b43;
                 border-radius: 100%;
                 box-shadow: 0px 2.5px 2px #3d3d3db5;
-                box-sizing: border-box;
+                /* box-sizing: border-box; */
                 display: inline-block;
-                height: 28px;
+                height: calc($size * 1.4);
                 position: relative;
-                width: 28px;
+                width: calc($size * 1.4);
 
-                &:after {
+                .um-radio__inner__thumb {
                     background-image: linear-gradient(180deg, rgb(222, 222, 222), rgb(203, 203, 203));
                     border-radius: 100%;
                     box-shadow: 0 0 2px #5b5b5b inset;
                     content: "";
-                    height: 20px;
-                    left: 50%;
+                    height: $size;
+                    left: calc($size * 0.2);
                     position: absolute;
-                    top: 50%;
-                    transform: translate(-50%, -50%) scale(1);
+                    top: calc($size * 0.2);
+                    /* transform: translate(-50%, -50%) scale(1); */
                     transition: transform .15s ease-in;
-                    width: 20px;
+                    width: $size;
                 }
             }
 
             .um-radio__original {
-                bottom: 0;
-                left: 0px;
-                margin: 0;
-                opacity: 0;
-                outline: num;
-                position: absolute;
-                right: 0;
-                top: 0;
-                z-index: -1;
+                display: none;
+                z-index: -999;
             }
         }
 
@@ -132,10 +134,10 @@
             -webkit-text-stroke: 0.4px rgb(106, 87, 50);
             color: rgb(106, 87, 50);
             cursor: pointer;
-            font-size: 20px;
+            font-size: $size;
             font-weight: bold;
-            line-height: 28px;
-            padding-left: 10px;
+            line-height: calc($size * 1.4);
+            padding-left: calc($size / 2);
             
             vertical-align: middle;
         }
@@ -145,9 +147,8 @@
     .um-radio.is-checked {
         .um-radio__input {
             .um-radio__inner {
-                &:after {
+                .um-radio__inner__thumb {
                     background-image: linear-gradient(180deg, rgb(176, 255, 66), rgb(82, 197, 86));
-                    transform: translate(-50%, -50%) scale(1);
                 }
             }
         }

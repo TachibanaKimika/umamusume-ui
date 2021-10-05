@@ -8,12 +8,12 @@
             <div 
             class="um-tabs__tab" 
             v-for="(item, index) in navList" 
-            :class="activeIndex===index?'um-tabs__active':''"
+            :class="activeKey===item.label?'um-tabs__active':''"
             :key="index" 
             @click="handleChange(index)"
             :style="{'width': 95/navList.length+'%'}"
             >
-                <span>{{item.label}}</span>
+                <span>{{item.name?item.name:item.label}}</span>
             </div>
         </div>
         <div class="um-tab-pane__content">
@@ -28,6 +28,10 @@
             value: {
                 type: [String, Number]
             },
+            active: {
+                type: String,
+                default: undefined
+            }
         },
         provide() {
             return {
@@ -38,7 +42,7 @@
             return {
                 navList: [],
                 activeKey: this.value,
-                activeIndex: 0
+                // activeIndex: 0
             }
         },
         methods: {
@@ -65,11 +69,12 @@
             updateStatus() {
                 const tabs = this.getAllPanes()
                 tabs.forEach(tab => (tab.show = tab.label === this.activeKey))
+                this.$emit('input', this.activeKey)
             },
             handleChange(index) {
                 const nav = this.navList[index]
                 this.activeKey = nav.label
-                this.activeIndex = index
+                // this.activeIndex = index
             }
         },
         watch: {

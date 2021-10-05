@@ -141,8 +141,14 @@ export default {
                         description: '卡片的宽度, 单位为px, 为默认值-1的时候为父元素的100%'
                     },
                     {
+                        attr: 'v-slot:default',
+                        type: 'html',
+                        default: '-',
+                        description: '默认插槽, 用于显示卡片主体的内容'
+                    },
+                    {
                         attr: 'v-slot:moreinfo',
-                        type: '具名插槽',
+                        type: 'html',
                         default: '-',
                         description: '具名插槽moreinfo, 输入该插槽的内容会被默认隐藏'
                     },

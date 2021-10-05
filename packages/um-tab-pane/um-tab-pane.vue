@@ -15,6 +15,10 @@ export default {
         label: {
             type: String,
             default: ''
+        },
+        name: {
+            type: String,
+            default: undefined
         }
     },
     inject: ['Tabs'],

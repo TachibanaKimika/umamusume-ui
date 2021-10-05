@@ -99,34 +99,34 @@ export default {
                 ],
                 data: [
                     {
-                        attr: 'type',
+                        attr: 'v-model',
                         type: 'String',
-                        default: 'white',
-                        description: '按钮外观主要颜色, 可选white/green'
+                        default: '-',
+                        description: '单独使用时的双向绑定值, 选中时value为选中的单选框的label'
                     },
                     {
-                        attr: 'circle',
-                        type: 'Boolean',
-                        default: 'false',
-                        description: '按钮外观是否为圆形'
-                    },
-                    {
-                        attr: 'circleBox',
-                        type: 'Boolean',
-                        default: 'false',
-                        description: '按钮外观是否为方形'
+                        attr: 'label',
+                        type: 'String/Number/Boolean',
+                        default: '-',
+                        description: '见v-model描述, 若没有向插槽传值, 单选框右侧的文字即为label'
                     },
                     {
                         attr: 'size',
                         type: 'Number',
                         default: '20',
-                        description: '按钮的大小属性, 单位为px'
+                        description: '单选框的大小属性, 单位为px'
                     },
                     {
                         attr: 'disabled',
                         type: 'Boolean',
                         default: 'false',
                         description: '是否禁用'
+                    },
+                    {
+                        attr: 'v-slot:default',
+                        type: 'html',
+                        default: '-',
+                        description: '默认插槽, 用于显示radio右侧的文字'
                     }
                 ]
             },

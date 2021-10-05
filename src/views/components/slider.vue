@@ -10,7 +10,7 @@
                     <p>默认滑动条</p>
                     <div style="padding: 15px">
                         <um-slider 
-                        v-model.number="testdata.first.slider1"
+                        v-model="testdata.first.slider1"
                         :min="0"
                         :max="100"
                         >
@@ -19,7 +19,7 @@
                     <p>禁用状态</p>
                     <div style="padding: 15px">
                         <um-slider 
-                        v-model.number="testdata.first.slider1"
+                        v-model="testdata.first.slider1"
                         :min="0"
                         :max="100"
                         disabled
@@ -138,11 +138,11 @@ export default {
             },
             testdata: {
                 first: {
-                    slider1: 50
+                    slider1: 1
                 }
             }
         }
-    }
+    },
 }
 </script>
 

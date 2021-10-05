@@ -124,10 +124,10 @@ export default {
                         description: '对话框标题的内容'
                     },
                     {
-                        attr: '默认插槽',
+                        attr: 'v-slot:default',
                         type: 'html',
                         default: '-',
-                        description: '对话框的内容'
+                        description: '默认插槽, 对话框的主要内容'
                     },
                     {
                         attr: 'v-solt:footer',
