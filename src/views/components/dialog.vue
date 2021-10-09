@@ -57,7 +57,24 @@ export default {
             sourcecode: `<div class="components-group">
     <p>默认对话框</p>
     <um-button @click="dialog.first.visible=true">打开对话框</um-button>
-</div>`,
+</div>
+
+<um-dialog title="对话框标题" :visible.sync="dialog.first.visible">
+    <div>
+        <p>对话框内容</p>
+    </div>
+
+    <template v-slot:footer>
+        <div style="padding:20px">
+            对话框的footer
+            <div>
+                <um-button circleBox @click="dialog.first.visible=false">
+                    <i class="um-icon-close"></i>
+                </um-button>
+            </div>
+        </div>
+    </template>
+</um-dialog>`,
             sourcecodeJS: `dialog: {
     first: {
         visible: false,

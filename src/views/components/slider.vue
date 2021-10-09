@@ -56,7 +56,7 @@ export default {
     <p>默认滑动条</p>
     <div style="padding: 15px">
         <um-slider 
-        v-model.number="testdata.first.slider1"
+        v-model="testdata.first.slider1"
         :min="0"
         :max="100"
         >
@@ -65,7 +65,7 @@ export default {
     <p>禁用状态</p>
     <div style="padding: 15px">
         <um-slider 
-        v-model.number="testdata.first.slider1"
+        v-model="testdata.first.slider1"
         :min="0"
         :max="100"
         disabled
@@ -99,10 +99,10 @@ export default {
                 ],
                 data: [
                     {
-                        attr: 'v-model.number',
+                        attr: 'v-model',
                         type: 'Number',
                         default: '0',
-                        description: '双向绑定数据, 必须加.number修饰, 否则会报错'
+                        description: '双向绑定数据'
                     },
                     {
                         attr: 'step',
@@ -138,7 +138,7 @@ export default {
             },
             testdata: {
                 first: {
-                    slider1: 1
+                    slider1: 10
                 }
             }
         }

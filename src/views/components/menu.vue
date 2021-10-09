@@ -35,9 +35,20 @@
         </div>
         <div class="components-use">
             <div>
+                <h2>um-menu</h2>
                 <um-table
                 :columns="attribution.columns"
                 :data="attribution.data"
+                >
+                </um-table>
+            </div>
+        </div>
+        <div class="components-use">
+            <div>
+                <h2>um-menu-item</h2>
+                <um-table
+                :columns="attributionGroup.columns"
+                :data="attributionGroup.data"
                 >
                 </um-table>
             </div>
@@ -103,11 +114,12 @@ export default {
                         default: 'horizontal',
                         description: '菜单的显示方式, 有horizontal(水平)以及vertical(垂直)两种'
                     },
+                    
                     {
-                        attr: 'circleBox',
+                        attr: 'route',
                         type: 'Boolean',
                         default: 'false',
-                        description: '按钮外观是否为方形'
+                        description: '开启路由模式, 开启后选中时会跳转到对应um-menu-item的index'
                     },
                     {
                         attr: 'size',
@@ -121,9 +133,46 @@ export default {
                         default: '-1',
                         description: 'item的宽度属性, 单位为px, 仅当模式为vertical时有效'
                     },
+                    {
+                        attr: 'indexChange',
+                        type: '回调函数',
+                        default: '-',
+                        description: '当index改变时传回index值'
+                    },
+                ]
+            },
+            attributionGroup: {
+                columns: [
+                    {
+                        name: 'attr',
+                        label: '属性名称',
+                        width: '12%'
+                    },
+                    {
+                        name: 'type',
+                        label: '接受类型',
+                        width: '12%'
+                    },
+                    {
+                        name: 'default',
+                        label: '默认值',
+                        width: '12%'
+                    },
+                    {
+                        name: 'description',
+                        label: '其他说明',
+                        width: '64%'
+                    }
+                ],
+                data: [
+                    {
+                        attr: 'index',
+                        type: 'String',
+                        default: '1',
+                        description: '初始化时选中item中的index值'
+                    },
                 ]
             }
-            
         }
     }
 }

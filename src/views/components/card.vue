@@ -47,7 +47,6 @@
         </div>
         <div class="components-use">
             <div>
-                <h2>um-checkbox</h2>
                 <um-table
                 :columns="attribution.columns"
                 :data="attribution.data"

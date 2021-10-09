@@ -31,3 +31,21 @@
     margin-right: 20px;
     width: 30%;
 }
+
+.code {
+    $color: rgba(116, 125, 255, 0.208);
+    ::selection {
+        background:$color; 
+        color:#555 !important;
+    }
+    
+    ::-moz-selection {
+        background:$color; 
+        color:#555 !important;
+    }
+    
+    ::-webkit-selection {
+        background:$color; 
+        color:#555 !important;
+    }
+}

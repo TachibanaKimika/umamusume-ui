@@ -2,7 +2,7 @@
  * @Author: Akarichan
  * @LastEditors: Akarichan
  * @Date: 2021-09-25 22:24:17
- * @LastEditTime: 2021-10-05 15:26:59
+ * @LastEditTime: 2021-10-09 10:41:05
 -->
 <!--
  * @Author: Akarichan
@@ -59,7 +59,7 @@
         </div>
         <div class="components-use">
             <div>
-                <h2>um-checkbox</h2>
+                <!-- <h2>um-checkbox</h2> -->
                 <um-table
                 :columns="attribution.columns"
                 :data="attribution.data"

@@ -2,13 +2,13 @@
  * @Author: Akarichan
  * @LastEditors: Akarichan
  * @Date: 2021-09-27 14:29:09
- * @LastEditTime: 2021-09-28 12:21:43
+ * @LastEditTime: 2021-10-09 10:58:45
 -->
 <template>
     <div>
         <h2>图标</h2>
         <p>直接通过设置类名为 el-icon-iconName 来使用即可。例如：</p>
-        <pre v-highlightjs="data">
+        <pre v-highlightjs="data" class="components_code">
             <code class="javascript"></code>
         </pre>
         <div class="icon_block">
