@@ -13,11 +13,11 @@
         "lib": "vue-cli-service build --target lib packages/index.js --dest=lib "
     },
     "dependencies": {
+        "animate.css": "^4.1.1",
         "core-js": "^3.6.5",
         "vue": "^2.6.11"
     },
     "devDependencies": {
-        "animate.css": "^4.1.1",
         "@vue/cli-plugin-babel": "~4.5.0",
         "@vue/cli-plugin-eslint": "~4.5.0",
         "@vue/cli-service": "~4.5.0",
