@@ -1,6 +1,6 @@
 {
     "name": "umamusume-ui",
-    "version": "0.1.21",
+    "version": "0.1.4",
     "private": false,
     "main": "lib/umamusume-ui.umd.min.js",
     "author": {
